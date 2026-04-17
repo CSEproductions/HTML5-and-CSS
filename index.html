@@ -1,39 +1,85 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Your Website</title>
+    <title>html and css</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        header, nav, main, aside, footer {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            margin: 0.5rem;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #eaeaea;
+        }
+        main {
+            flex: 3;
+            background-color: #fff;
+        }
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li>Your menu</li>
-            </ul>
-        </nav>
+        <h1>Website Title</h1>
+        <p>Subtitle or tagline goes here</p>
     </header>
-    <section>
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
-    </section>
-    <aside>
-        <h2>About section</h2>
-        <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    </aside>
+
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 1rem;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <h2>Main Content Area</h2>
+            <p>This is where your primary content will go. Replace with actual text, images, or components from your wireframe.</p>
+        </main>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <p>Additional links, ads, or widgets can be placed here.</p>
+        </aside>
+    </div>
+
     <footer>
-        <p>Copyright 2009 Your name</p>
+        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
