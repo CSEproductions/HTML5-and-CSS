@@ -4,70 +4,55 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Preview</title>
+    <title>My project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            width: 100%;
-        }
-
-        main {
-            max-width: 900px;
-            width: 100%;
-            padding: 1rem;
+            min-height: 100vh;
         }
 
         .wireframe-container {
-            background: white;
-            border: 1px solid #ccc;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
         }
 
         .wireframe-container img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            border: 1px solid #ddd;
+            display: block;
+            border: 2px solid #ccc;
+            border-radius: 6px;
         }
 
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            width: 100%;
+        .hotspot {
+            position: absolute;
+            border: 2px dashed rgba(255, 0, 0, 0.5);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .hotspot:hover {
+            background-color: rgba(255, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Our story? what?</h1>
-    </header>
+<div class="assets">
+    <img src="Our story.png" alt="Wireframe Layout">
 
-    <main>
-        <div class="assets">
-            <img src="Our story.png" alt="Our story">
-        </div>
-    </main>
+    <div class="hotspot" style="top: 20%; left: 10%; width: 20%; height: 10%;" 
+         onclick="alert('Header clicked!')"></div>
 
-    <footer> 
-    </footer>
+    <div class="hotspot" style="top: 50%; left: 30%; width: 40%; height: 15%;" 
+         onclick="alert('Main content clicked!')"></div>
+</div>
 
 </body>
 </html>
