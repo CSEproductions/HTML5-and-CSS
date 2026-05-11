@@ -8,4 +8,9 @@
 
 .navigation a {
 	color: white;
+	text-transform: uppercase;
+}
+
+.navigation nav a {
+	text-decoration: none;
 }
