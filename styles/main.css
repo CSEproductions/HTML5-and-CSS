@@ -1,3 +1,11 @@
 .brand { 
 	color: white; 
 }
+
+.navigation {
+	background-color: black;
+}
+
+.navigation a {
+	color: white;
+}
